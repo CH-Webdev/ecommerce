@@ -24,20 +24,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Ecommerce</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <nav class="navbar">
+      <div class="nav">
+        <img src="img/dark-logo.png" class="brand-logo" alt="" />
+        <div class="nav-items">
+          <div class="search">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="search brand, product"
+            />
+            <button class="search-btn">search</button>
+          </div>
+          <a href="#"><img src="img/user.png" alt="" /></a>
+          <a href="#"><img src="img/cart.png" alt="" /></a>
+        </div>
+      </div>
+      <ul class="links-container">
+        <li class="link-item"><a href="#" class="link">home</a></li>
+        <li class="link-item"><a href="#" class="link">women</a></li>
+        <li class="link-item"><a href="#" class="link">men</a></li>
+        <li class="link-item"><a href="#" class="link">kids</a></li>
+        <li class="link-item"><a href="#" class="link">accessories</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
